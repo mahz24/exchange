@@ -1,0 +1,9 @@
+<%- include('layout.ejs') %>
+  <h1>Exchage latest</h1>
+  <ul>
+    <% Object.keys(data.rates).forEach(key=>{ %>
+      <li><%=key%>-<%=data.rates[key]%></li>
+    <%})%>
+  </ul>
+</body>
+</html>
